@@ -11,9 +11,17 @@
 <div>
 	<h1>学生信息管理系统</h1>
 </div>
+<div>
 <button class="btn btn-success" onclick="window.location.href='/list.jsp'">schoolA学生管理</button>
 <button class="btn btn-success" onclick="window.location.href='/listb.jsp'">schoolB学生管理</button>
+</div>
+<div><p> </p></div>
+<div>
 <button class="btn btn-success" onclick="window.location.href='/listall.jsp'">总体学生管理</button>
-
+</div>
+<div><p> </p> </div>
+<div>
+<button class="btn btn-success" onclick="window.location.href='/find.jsp'">总体学生查询</button>
+</div>
 </body>
 </html>

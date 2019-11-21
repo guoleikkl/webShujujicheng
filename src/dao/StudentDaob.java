@@ -43,7 +43,7 @@ public class StudentDaob {
      * @return
      */
     public boolean addStudent(Studentb studentb) {
-        String sql = "INSERT INTO student(studentname,studentage,studentsex,studentcollege,studentid) VALUES(?,?,?,?,?);";
+        String sql = "INSERT INTO studentinformation(studentname,studentage,studentsex,studentcollege,studentid) VALUES(?,?,?,?,?);";
         Connection conn = DbUtilb.getConnection();
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
@@ -67,7 +67,7 @@ public class StudentDaob {
      * @return
      */
     public boolean updateStudent(Studentb studentb) {
-        String sql = "UPDATE student set studentname=?,studentAge=?,studentsex=?,studentCollege=? WHERE studentid=?";
+        String sql = "UPDATE studentinformation set studentname=?,studentAge=?,studentsex=?,studentCollege=? WHERE studentid=?";
         Connection conn = DbUtilb.getConnection();
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
@@ -91,7 +91,7 @@ public class StudentDaob {
      * @return
      */
     public boolean deleteStudent(int studentId) {
-        String sql = "delete from student where studentid = ?";
+        String sql = "delete from studentinformation where studentid = ?";
         Connection conn = DbUtilb.getConnection();
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
@@ -112,7 +112,7 @@ public class StudentDaob {
      */
     public Studentb getStudentById(int studentId) {
         Connection conn = DbUtilb.getConnection();
-        String sql = "select * from student where studentid = " + studentId;
+        String sql = "select * from studentinformation where studentid = " + studentId;
         Studentb student = new Studentb();
         try {
             PreparedStatement pst = conn.prepareStatement(sql);

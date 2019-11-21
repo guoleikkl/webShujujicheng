@@ -34,6 +34,15 @@
                                   <input type="radio" name="studentSex" value="0"> 女
                                 </label>
                     </div>
+                    <div>
+                    	<label class="radio-inline">
+                    		<input type="radio" name="studentSchool" value="a" checked="checked">学校A
+                    	</label>
+                    	<label class="radio-inline">
+                    		<input type="radio" name="studentSchool" value="b">学校B
+                    	</label>
+                    
+                    </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-info">添加学生</button>
                     </div>

@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import bean.Student;
 import dao.StudentDao;
 import java.io.IOException;
-@WebServlet("/add")
+//@WebServlet("/add")
 @SuppressWarnings("serial")
 public class AddServlet extends HttpServlet {
     @Override

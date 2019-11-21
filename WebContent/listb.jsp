@@ -28,6 +28,10 @@
                                 <td>${student.studentName}</td>
                                 <td>${student.studentAge}</td>
                                 <td>${student.studentSex}</td>
+                                <td>
+                                    <a class="btn btn-info btn-sm" href="/updateb?studentId=${student.studentId}">更 新</a>
+                                    <a class="btn btn-danger btn-sm" href="/deleteb?studentId=${student.studentId}">删 除</a>
+                                </td>
                             </tr>
                         </c:forEach>
                     </tbody>
