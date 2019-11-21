@@ -1,0 +1,40 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生管理系统</title>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <form action="ListbServlet" ></form>
+    </head>
+    <body style="padding-top: 20px;">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>学生列表</h1><br>
+                <table class="table">
+                    <thead>
+                        <td>学生ID</td>
+                        <td>学生学院</td>
+                        <td>学生姓名</td>
+                        <td>学生年龄</td>
+                        <td>学生性别</td>
+                        <td>操作</td>
+                    </thead>
+                    <tbody>
+                        <c:forEach items="${studentListb}" var="student">
+                            <tr>
+                                <td>${student.studentId}</td>
+                                <td>${student.studentCollege}</td>
+                                <td>${student.studentName}</td>
+                                <td>${student.studentAge}</td>
+                                <td>${student.studentSex}</td>
+                            </tr>
+                        </c:forEach>
+                    </tbody>
+                </table>
+                <button class="btn btn-success" onclick="window.location.href='/add'">添加学生</button>
+                <button class="btn btn-info" onclick="window.location.href='/ListbServlet'">刷新列表</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<course>
+    <cid>
+        <name>cid</name>
+        <type>int</type>
+        <length>8</length>
+        <nonull>ture</nonull>
+        <key>ture</key>
+    </cid>
+    <cname>
+        <name>cName</name>
+        <type>varchar</type>
+        <length>255</length>
+        <nonull>ture</nonull>
+        <key>false</key>
+    </cname>
+    <csnum>
+        <name>xuankeNumber</name>
+        <type>int</type>
+        <length>10</length>
+        <nonull>ture</nonull>
+        <key>false</key>
+    </csnum>
+</course>

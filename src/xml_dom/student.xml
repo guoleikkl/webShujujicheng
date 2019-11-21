@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<studentInformation>
+    <stu>
+        <name>stuNumber</name>
+        <type>int</name>
+        <length>10<length>
+        <nonull>ture</nonull>
+        <key>ture</key>
+    </stu>
+    <stu>
+        <name>sName</name>
+        <type>varchar</type>
+        <length>255</length>
+        <nonull>ture</nonull>
+        <key>flase</key>
+    </stu>
+    <stu>
+        <name>gender</name>
+        <type>varchar</type>
+        <length>255</length>
+        <nonull>ture</nonull>
+        <key>flase</key>
+    </stu>
+    <stu>
+        <name>age</name>
+        <type>int</type>
+        <length>20<length>
+        <nonull>ture</nonull>
+        <key>flase</key>
+    </stu>
+    <stu>
+        <name>college</name>
+        <type>varchar</type>
+        <length>255</length>
+        <nonull>ture</nonull>
+        <key>flase</key>
+    </stu>
+</studentInformation>
